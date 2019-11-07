@@ -10,7 +10,7 @@ const ChatHeader = props => {
 
     return(       
         <div className='chat-header'>
-          <a onClick={minimizar} id='fechar'><img src='images/imgx.png' id='imgx'/></a>
+          <p onClick={minimizar} id='fechar'><img src='images/imgx.png' id='imgx' alt='Fechar'/></p>
         </div>
     );
 }

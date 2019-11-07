@@ -6,6 +6,7 @@ import {conversaWatson} from './../store/actions/watson'
 import '../chat/chat.css'
 
 
+
 class ChatMensagem extends Component{
    constructor(props){
        super(props)
@@ -15,7 +16,7 @@ class ChatMensagem extends Component{
 
    inputEnviaTexto(){
 
-        
+     
 
         const b = document.getElementById('input');
         
@@ -30,27 +31,30 @@ class ChatMensagem extends Component{
             contexto = this.props.resposta.data.context
         }
 
-        if(b.value != ""){
-        this.props.enviaTexto(mensagem)
-        this.props.conversaWatson(mensagem, contexto)
-        b.value = ''
+        if(b.value !== ""){
+           
+                this.props.enviaTexto(mensagem)
+                this.props.conversaWatson(mensagem, contexto)
+                b.value = "";
+        }
+ 
           }
-     }
+     
    
 
     
     render(){
         return(
-            <div className='chat-mensagem'>
-                <hr/>
-                <InputGroup>
-                <Input placeholder='Pergunte-me' id="input" required/>
-               <InputGroupAddon addonType='append'>
-                   <Button color='dark' onClick={this.inputEnviaTexto} >Enviar</Button>
-               </InputGroupAddon>
-                </InputGroup>
-            
-            </div>
+                <div className='chat-mensagem'>
+                    <hr/>
+                    <InputGroup>
+                    <Input placeholder='Pergunte-me' id="input" required/>
+                <InputGroupAddon addonType='append'>
+                    <Button color='dark' onClick={this.inputEnviaTexto} >Enviar</Button>
+                </InputGroupAddon>
+                    </InputGroup>
+                
+                </div>
         );
     }
     

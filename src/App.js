@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 import './componentes/chat/chat.css'
 import 'jquery';
-import Chatbot from './componentes/chatbot';
+import Chatbot from './componentes/chatbot'
 import {Provider} from 'react-redux'
 import store from  './componentes/store'
 
@@ -35,7 +35,7 @@ function toggle() {
               <Chatbot/>
             </div>
             
-             <img src="images/iracema.jpg" onClick={toggle} id="img" />
+             <img src="images/iracema.jpg" onClick={toggle} id="img" alt='Iracema'/>
              
         </div>
       </Provider>

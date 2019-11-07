@@ -86,14 +86,27 @@ height: 110vw ;
    border-radius: 8px 8px;
    display: none;
    position: relative;
-   width: 85vw;
-   height: 145vw;
+   width: 86vw;
+   height: 147vw;
 }
 
 #userconversa{
   width:50px;
   height: 48px;
 }
+
+#vaa{
+  margin-left:3%;
+}
+
+#vee{
+  margin-left:3%;
+}
+
+#ve{
+  margin-left:3%;
+}
+
 
 #botconversa{
   width:50px;
@@ -128,6 +141,7 @@ height: 110vw ;
   height: 100%; 
   word-wrap: break-word;
 }
+
 
 #textobc{
   width:65vw;
